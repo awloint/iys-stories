@@ -72,12 +72,12 @@ body {
 
 
 #form {
-    background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
+    /* background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
     url(../images/lady.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: 20% 23%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     position: relative;
     overflow: hidden;
     margin: auto;
@@ -85,7 +85,7 @@ body {
     border-radius: 15px;
     padding: 40px 20px 20px 20px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-      /* filter: opacity(50%); */
+      filter: saturate(8);
 }
 
 #form:before {
@@ -96,7 +96,7 @@ body {
     right: 0;
     bottom: 0;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(20px) saturate(3) opacity(0.9);
+    filter: blur(5px) saturate(3) opacity(0.9);
     background: inherit;
 }
 
