@@ -63,7 +63,7 @@ body {
 
 .container {
     max-width: 90%;
-    /* background: inherit; */
+    background: inherit;
 }
 
 .text-center {
@@ -72,12 +72,13 @@ body {
 
 
 #form {
-    background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
-    url(../images/lady.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+    /* background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
+    url(../images/lady.jpg); */
+    /* background-attachment: fixed; */
+    /* background-size: cover;
     background-position: 20% 23%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background: inherit;
     position: relative;
     margin: auto;
     margin-top: 70px;
@@ -95,7 +96,7 @@ body {
     right: 0;
     bottom: 0;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px) saturate(3) opacity(2);
+    filter: blur(5px) saturate(7);
     background: inherit;
 }
 
