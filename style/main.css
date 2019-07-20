@@ -15,7 +15,12 @@
 }
 
 body {
-
+            background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
+            url(../images/lady.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 20% 23%;
+            background-repeat: no-repeat;
 }
 
 .merienda {
@@ -70,8 +75,8 @@ body {
     background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
     url(../images/lady.jpg);
     background-attachment: fixed;
-    /* background-size: cover;
-    background-position: 20% 23%; */
+    background-size: cover;
+    background-position: 20% 23%;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
