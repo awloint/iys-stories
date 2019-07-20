@@ -3,6 +3,12 @@
     background-image: url("../images/flags.png");
 }
 
+@media screen and (min-width:768px) {
+    body{
+        background-image: url(../images/lady.jpg);
+        background-size: cover;
+        }
+}
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .iti__flag {
@@ -14,18 +20,12 @@
     width: 100%;
 }
 
-body:before {
-        content: '';
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
+body {
         background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
                 url(../images/lady.jpg);
         background-size: cover;
         background-position: 20% 23%;
+        background-attachment: fixed;
         background-repeat: no-repeat;
 }
 
