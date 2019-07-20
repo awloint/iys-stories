@@ -63,7 +63,7 @@ body {
 
 .container {
     max-width: 90%;
-    background: inherit;
+    /* background: inherit; */
 }
 
 .text-center {
