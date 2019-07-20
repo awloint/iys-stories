@@ -21,13 +21,21 @@
     width: 100%;
 }
 
-body {
-        background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
-                url(../images/lady.jpg);
-        background-size: cover;
-        background-position: 20% 23%;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%),
+            url(../images/lady.jpg);
+    background-size: cover;
+    background-position: 20% 23%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .merienda {
