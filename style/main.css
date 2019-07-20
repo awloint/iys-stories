@@ -80,12 +80,12 @@ body {
     background-repeat: no-repeat; */
     position: relative;
     overflow: hidden;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 70px;
     border-radius: 15px;
     padding: 40px 20px 20px 20px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-      filter: saturate(8);
+      /* filter: blur(10px); */
 }
 
 #form:before {
