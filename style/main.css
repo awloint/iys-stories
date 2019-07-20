@@ -90,7 +90,6 @@ body,form {
 
 #form:before {
     content: '';
-    background: inherit;
     position: absolute;
     top: 0;
     left: 0;
