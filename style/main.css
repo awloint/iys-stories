@@ -78,7 +78,7 @@ body {
     background-size: cover;
     background-position: 20% 23%;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     overflow: hidden;
     margin: auto;
     margin-top: 70px;
