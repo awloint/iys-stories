@@ -11,17 +11,20 @@
     <!-- Load Bootstrap 4-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Load Main Stylesheet -->
-    <link rel="stylesheet" href="style/main.css">
     <!-- Load Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <!-- Load Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Load Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Roboto+Condensed|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda|Boogaloo|Roboto+Condensed|Slabo+27px|Oswald&display=swap" rel="stylesheet">
     <!-- Load Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Load intl-tel-input -->
+    <link rel="stylesheet" href="style/intlTelInput.min.css">
+    <script src="scripts/intlTelInput.min.js"></script>
+    <!-- Load Main Stylesheet -->
+    <link rel="stylesheet" href="style/main.css">
     <!-- Load sweetalert.js -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
@@ -43,9 +46,16 @@
 
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-5">
-
+        <div class="row top-margin">
+            <div class="col-md-5 my-auto">
+                <div class="row">
+                    <div class="col">
+                        <p class="boogaloo text-center" style="font-size: 200%; color: #f10f11;">Share your</p>
+                        <p class="kaushan text-center" style="font-size:120%; margin-bottom: -33px; vertical-align: middle;">inspiring</p>
+                            <p class="oswald text-center" style="font-size:500%; margin-bottom: -33px;">IMPACT</p>
+                            <p class="merienda text-center" style="font-size: 200%;">story</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-7">
                     <!-- Form Begins -->
@@ -56,15 +66,6 @@
                                     required>
                                 <div class="invalid-feedback">
                                     Please provide a name.
-                                </div>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md form-group">
-                                <input type="text" class="form-control" id="middleName" name="middleName" placeholder="Your Middle Name">
-                                <div class="invalid-feedback">
-                                    Please provide a Name
                                 </div>
                                 <div class="valid-feedback">
                                     Looks good!
@@ -114,7 +115,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-md">
                                 <legend class="col-form-label">What is your gender?</legend>
                                 <div class="form-check form-check-inline form-group">
                                     <input type="radio" name="gender" id="male" class="form-check-input" value="Male" required />
@@ -129,8 +130,6 @@
                                     <label for="other" class="form-check-label">Other</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-md form-group">
                                 <label for="dob">Date of Birth</label>
                                 <input type="date" class="form-control" id="dob" name="dob" required />
@@ -143,57 +142,21 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col form-group">
-                                <label for="sector">What sector are you in?</label>
-                                <select class="custom-select" name="sector" id="sector" required>
-                                    <option disabled selected value> -- select an option -- </option>
-                                    <option value="School">School</option>
-                                    <option value="Educators">Educators</option>
-                                    <option value="Educational Bodies">Educational Bodies</option>
-                                    <option value="Youth leaders">Youth Leaders</option>
-                                    <option value="Youth Organisation">Youth Organisations</option>
-                                    <option value="Youth Affilated Bodies">Youth Affilated Bodies</option>
-                                    <option value="Civil Society">Civil Society</option>
-                                    <option value="Religious Based">Religious Based</option>
-                                    <option value="Not-for-Profit">Not-for-Profit</option>
-                                    <option value="Executive Leaders">Executive Leaders</option>
-                                    <option value="Legislative Leaders">Legislative Leaders</option>
-                                    <option value="Judiciary Leaders">Judiciary Leaders</option>
-                                    <option value="Opinion Leaders">Opinion Leaders</option>
-                                    <option value="Diplomats">Diplomats</option>
-                                    <option value="Stakeholders">Stakeholders</option>
-                                </select>
-                            </div>
+
                         </div>
                         <div class="row">
-                            <div class="col-md form-group">
-                                <label for="organisation">What is the name of your Organisation/School/Affiliated
-                                    body?</label>
-                                <input type="text" class="form-control" id="organisation" name="organisation" required />
-                            </div>
-                            <div class="invalid-feedback">
-                                This will help us serve you better.
-                            </div>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md form-group">
-                                <label for="referringChannel">How did you hear about us?</label>
-                                <select class="custom-select" name="referringChannel" id="referringChannel" required>
-                                    <option disabled selected value> -- select an option -- </option>
-                                    <option value="Family Member">Family Member</option>
-                                    <option value="A friend">A friend</option>
-                                    <option value="Social Media">Facebook</option>
-                                    <option value="Instagram">Instagram</option>
-                                    <option value="Twiter">Twitter</option>
-                                    <option value="LinkedIn">LinkedIn</option>
-                                </select>
-                                <div class="valid-feedback">
-                                    Looks good!
+                                <div class="col form-group">
+                                    <label for="story">What is your story of impact?</label>
+                                    <textarea class="rounded form-control" name="story" id="story" cols="52" rows="5"
+                                        placeholder="Write your story here..." minlength="160" required></textarea>
+                                        <small class="text-primary">Not less than 160 characters.</small>
+                                    <div class="invalid-feedback">
+                                        Please provide a Question.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
                                 </div>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -208,14 +171,13 @@
                     </form>
             </div>
         </div>
-        <div class="row">
+        <div class="row top-margin">
             <div class="col">
                 <p class="text-center">
                     &copy; <span id="year"></span> African Women In Leadership Organisation</p>
-                <small class="text-center form-text bottom-margin">Designed and Developed by
-                    <a href="https://anitajarikre.com" target="_blank">Anita Jarikre</a>,
-                    <a href="https://github.com/emmanuelngewe" target="_blank">Emmanuel Ngewe</a> &amp; <a
-                        href="https://stbensonimoh.com/about" target="_blank">Benson Imoh,<sub>ST</sub></a>
+                <small class="form-text text-muted text-center animated swing infinite slower bottom-margin">Designed and Developed by
+                    <a href="https://stbensonimoh.com/about" target="_blank"><img class="benson" src="https://stbensonimoh.com/wp-content/uploads/2019/03/logo.svg"
+                            alt="Benson Imoh,ST" width="50px"></a>
                 </small>
             </div>
         </div>

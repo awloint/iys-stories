@@ -1,9 +1,37 @@
+/* Stylesheet */
+.iti__flag {
+    background-image: url("../images/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .iti__flag {
+        background-image: url("../images/flags@2x.png");
+    }
+}
+
+.iti {
+    width: 100%;
+}
+
 body {
     background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%), url(../images/lady.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: 20% 23%;
     background-repeat: no-repeat;
+}
+
+.merienda {
+    font-family: 'Merienda', cursive;
+}
+
+.kaushan {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
 }
 
 .boogaloo {
