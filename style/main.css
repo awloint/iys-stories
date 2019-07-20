@@ -78,8 +78,8 @@ body {
     background-size: cover;
     background-position: 20% 23%;
     background-repeat: no-repeat;
-    background: inherit;
     position: relative;
+    overflow: hidden;
     margin: auto;
     margin-top: 70px;
     border-radius: 15px;
@@ -96,7 +96,7 @@ body {
     right: 0;
     bottom: 0;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(10px) saturate(3);
+    filter: blur(20px) saturate(3) opacity(0.9);
     background: inherit;
 }
 
