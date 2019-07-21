@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', e => {
   }
 
   document.querySelector('#lastName').onchange = e => {
-  let val = document.querySelector('#lastName').value
-  RegExp = /\b[a-z]/g
+    let val = document.querySelector('#lastName').value
+    RegExp = /\b[a-z]/g
 
-  val = val.charAt(0).toUpperCase() + val.substr(1)
-}
+    val = val.charAt(0).toUpperCase() + val.substr(1)
+  }
 
   document.querySelector('#email').onchange = e => {
     let val = document.querySelector('#email').value
@@ -65,38 +65,38 @@ document.addEventListener('DOMContentLoaded', e => {
       const formdata = new FormData(form)
 
       // initiate a fetch call
-//       fetch('scripts/submit.php', {
-//         method: 'post',
-//         body: formdata
-//       })
-//         .then(response => {
-//           return response.json()
-//         })
-//         .then(data => {
-//         //   console.log(data)
-//             if (data === 'user_exists') {
-//               swal(
-//                 'Already Registered',
-//                 'You have already registered for the webinar.',
-//                 'warning'
-//               )
-//               setTimeout(() => {
-//                 window.location = 'https://businessitygroup.com'
-//               }, 3000)
-//             } else if (data === 'success') {
-//               swal(
-//                 'Registration Successful!',
-//                 'Your registration was successful.',
-//                 'success'
-//               )
-//               setTimeout(() => {
-//                 window.location = 'https://businessitygroup.com'
-//               }, 3000)
-//             }
-//         })
-//         .catch(error => {
-//           console.log('The Request has Failed', error)
-//         })
+      fetch('scripts/submit.php', {
+        method: 'post',
+        body: formdata
+      })
+        .then(response => {
+          return response.json()
+        })
+        .then(data => {
+          //   console.log(data)
+          if (data === 'user_exists') {
+            swal(
+              'Already Submitted',
+              'You have already submitted your impact story.',
+              'warning'
+            )
+            setTimeout(() => {
+              window.location = 'https://awlo.org/youthsummit'
+            }, 3000)
+          } else if (data === 'success') {
+            swal(
+              'Submission Successful!',
+              'Your story submission was successful.',
+              'success'
+            )
+            setTimeout(() => {
+              window.location = 'https://awlo.org/youthsummit'
+            }, 3000)
+          }
+        })
+        .catch(error => {
+          console.log('The Request has Failed', error)
+        })
     }
   })
 })
